@@ -35,7 +35,7 @@ O projeto contempla exclusivamente o desenvolvimento do banco de dados, sem impl
 | Caroline Navarro Santos | 823131382 |
 | Daniel Henrique Resende | 82410349 |
 | Gabriel da Costa Lopes Muniz | 823124043 |
-| Paulo da Silva Bassiano 824219946 |
+| Paulo da Silva Bassiano | 824219946 |
 
 ---
 
