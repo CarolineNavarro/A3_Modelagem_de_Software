@@ -7,7 +7,7 @@ O objetivo é projetar e implementar um banco de dados relacional utilizando **S
 
 ---
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 O **Sistema de Gestão de Estacionamento** tem como finalidade organizar e gerenciar as informações relacionadas ao funcionamento de um estacionamento.
 
