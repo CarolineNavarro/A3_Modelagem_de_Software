@@ -162,19 +162,19 @@ Após a criação do banco:
 
 ---
 
-## 📖 Regras de Negócio e Decisões de Modelagem
+## Regras de Negócio e Decisões de Modelagem
 
 O banco de dados foi projetado considerando as **15 regras de negócio (RN01 a RN15)** estabelecidas no enunciado da atividade.
 
 As decisões tomadas durante a modelagem, especialmente nos pontos em que o enunciado permite diferentes interpretações, são documentadas no arquivo:
 
-📄 `docs/decisoes.md`
+`docs/decisoes.md`
 
 Cada decisão deve conter sua descrição e justificativa, garantindo transparência e coerência entre os modelos conceitual, lógico e físico.
 
 ---
 
-## 🔎 Consultas SQL
+## Consultas SQL
 
 O projeto contempla **17 consultas SQL obrigatórias**, organizadas em quatro níveis:
 
@@ -187,7 +187,7 @@ As consultas estão disponíveis em `sql/03-consultas.sql`, acompanhadas de seus
 
 ---
 
-## 📄 Licença
+## Licença
 
 **Licença a definir.**
 
