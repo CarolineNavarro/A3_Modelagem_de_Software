@@ -90,13 +90,13 @@ O desenvolvimento está dividido em três etapas de modelagem.
 
 Representa as entidades, seus atributos, relacionamentos e cardinalidades, descrevendo as regras de negócio independentemente da implementação.
 
-**Diagrama Conceitual:** [Adicionar link do diagrama](#)
+**Diagrama Conceitual:** [DER_ESTACIONAMENTO.jpg](./docs/01-conceitual/DER_ESTACIONAMENTO.jpg)
 
 ### 2. Modelo Lógico
 
 Apresenta a estrutura relacional do banco de dados, incluindo tabelas, atributos, chaves primárias e estrangeiras.
 
-**Diagrama Lógico:** [Adicionar link do diagrama](#)
+**Diagrama Lógico:** [LOGICO_ESTACIONAMENTO.png](./docs/02-logico/LOGICO_ESTACIONAMENTO.png)
 
 ### 3. Modelo Físico
 
