@@ -121,7 +121,7 @@ Para reproduzir o banco de dados, siga as instruções abaixo.
 Clone o repositório utilizando o Git:
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/CarolineNavarro/A3_Modelagem_de_Software
 ```
 
 Ou utilize a opção **Code → Download ZIP** na página do GitHub.
