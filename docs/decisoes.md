@@ -49,3 +49,29 @@ O relacionamento entre Estadia e Pagamento é opcional no modelo geral, pois est
 A disponibilidade será calculada pela diferença entre a capacidade máxima cadastrada e a quantidade de estadias sem registro de saída.
 
 **Justificativa:** atender às RN03 e RN04, considerando que veículos rotativos e mensalistas compartilham a mesma capacidade.
+
+## 11. Regras Omissas
+
+### Decisão RN14 – Múltiplos contratos por veículo e controle de sobreposição
+
+**Regra:** Um mesmo veículo não poderá possuir dois ou mais contratos com períodos de vigência sobrepostos.
+
+**Decisão adotada:** Foi estabelecido que um veículo poderá possuir múltiplos contratos ao longo do tempo, desde que os respectivos períodos de vigência sejam distintos e não apresentem qualquer sobreposição. Dessa forma, é permitida a celebração de novos contratos após o encerramento dos anteriores, preservando o histórico contratual do veículo.
+
+**Justificativa:** Essa decisão permite contemplar situações de renovação ou recontratação dos serviços de estacionamento, sem comprometer a integridade dos dados. Além disso, possibilita manter o histórico dos vínculos contratuais, garantindo que cada período de utilização mensalista esteja associado a um único contrato vigente, em conformidade com a RN14.
+
+**Critério de interpretação das datas:** As datas de início e término da vigência são consideradas inclusivas. Portanto, caso um contrato termine em 31/03, um novo contrato para o mesmo veículo poderá iniciar em 01/04, mas não em 31/03, pois isso caracterizaria sobreposição de períodos.
+
+---
+
+### Decisão RN09 – Controle de vigência das tarifas
+
+**Regra:** As tarifas de estacionamento podem sofrer alterações ao longo do tempo, sendo necessário identificar o valor aplicável em cada período.
+
+**Decisão adotada:** Foi definido que cada tarifa possuirá um período de vigência, determinado pelas datas de início e término. Quando o campo `fim_vigencia` apresentar valor `NULL`, será considerado que a tarifa permanece ativa, sem data de encerramento previamente estabelecida.
+
+**Justificativa:** Essa abordagem permite registrar o histórico de alterações tarifárias e identificar corretamente o valor aplicável a cada estadia, considerando a data em que ocorreu a entrada do veículo no estacionamento. A utilização de um término de vigência nulo também evita a necessidade de atualizações constantes enquanto a tarifa permanecer em vigor, mantendo a flexibilidade do sistema.
+
+**Critério de interpretação das datas:** As datas de início e término da vigência são consideradas inclusivas. Assim, uma tarifa será considerada válida desde sua data de início até sua data de término, incluindo ambas. Quando `fim_vigencia` for `NULL`, entende-se que sua validade permanece indeterminada, até que seja estabelecido um encerramento.
+
+
