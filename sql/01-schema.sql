@@ -71,12 +71,6 @@ CREATE TABLE "loja_conveniada" (
 	"nome"	TEXT NOT NULL UNIQUE,
 	PRIMARY KEY("cod_loja")
 );
-DROP TABLE IF EXISTS "marca";
-CREATE TABLE "marca" (
-	"cod_marca"	INTEGER,
-	"nome"	TEXT NOT NULL UNIQUE,
-	PRIMARY KEY("cod_marca")
-);
 DROP TABLE IF EXISTS "mensalidade";
 CREATE TABLE "mensalidade" (
 	"cod_mensalidade"	INTEGER,
@@ -88,16 +82,6 @@ CREATE TABLE "mensalidade" (
 	UNIQUE("cod_contrato","mes","ano"),
 	PRIMARY KEY("cod_mensalidade"),
 	FOREIGN KEY("cod_contrato") REFERENCES "contrato"("cod_contrato")
-);
-DROP TABLE IF EXISTS "modelo";
-CREATE TABLE "modelo" (
-	"cod_modelo"	INTEGER,
-	"nome"	TEXT NOT NULL,
-	"carroceria"	TEXT NOT NULL CHECK("carroceria" IN ('Hatch', 'Sedã', 'SUV', 'Picape', 'Minivan')),
-	"cod_marca"	INTEGER NOT NULL,
-	UNIQUE("cod_marca","nome"),
-	PRIMARY KEY("cod_modelo"),
-	FOREIGN KEY("cod_marca") REFERENCES "marca"("cod_marca")
 );
 DROP TABLE IF EXISTS "ocorrencia";
 CREATE TABLE "ocorrencia" (
